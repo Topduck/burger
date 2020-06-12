@@ -56,7 +56,7 @@ function objToSql(ob) {
         });
     },
     // updates the burgers in the table. The U in CRUB
-    update: function(table, objColVals, condition, cb){
+    updateOne: function(table, objColVals, condition, cb){
         var queryString = "UPDATE " + table;
         queryString += " SET ";
         queryString += objToSql(objColVals);
